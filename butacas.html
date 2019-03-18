@@ -1,0 +1,371 @@
+<html>
+<head>
+    <title>Butacas</title>
+    <link href="https://file.myfontastic.com/wkB5qsdpYrUwj3t76hyKV4/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/Estilo menu.css">
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/Archivo menu.js"></script>
+    <link href="https://file.myfontastic.com/wkB5qsdpYrUwj3t76hyKV4/icons.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="butacas.css">
+</head>
+    
+<body onload="cargardatosdelapelicula()">
+    <header>
+		<div class="menu_bar">
+			<a href="#" class="bt_menu"><span class="icon-bars"></span>Menu</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="Cinema.html"><span class="icon-results"></span>Inicio</a></li>
+				<li><a href="calendario.html">Calendario</a></li>
+                <li class="submenu"><a href="login.html">Iniciar sesion</a></li>
+			</ul>
+		</nav>
+	</header>
+    
+    <h1 id="titulodelapelicula"></h1>
+    <br>
+    <br>
+    <br>
+    <div id="butacas">
+        <table id="bloque1">
+            <tr>
+                <td class="filas">H</td>
+                <td class="asientos"><a class="button" onclick="butaca('H1')" id="H1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('H2')" id="H2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('H3')" id="H3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('H4')" id="H4" href="#popup1">4</a></td>
+            </tr>
+            <tr>
+                <td class="filas">G</td>
+                <td class="asientos"><a class="button" onclick="butaca('G1')" id="G1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('G2')" id="G2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('G3')" id="G3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('G4')" id="G4" href="#popup1">4</a></td>
+            </tr>
+            <tr>
+                <td class="filas">F</td>
+                <td class="asientos"><a class="button" onclick="butaca('F1')" id="F1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('F2')" id="F2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('F3')" id="F3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('F4')" id="F4" href="#popup1">4</a></td>
+            </tr>
+            <tr>
+                <td class="filas">E</td>
+                <td class="asientos"><a class="button" onclick="butaca('E1')" id="E1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('E2')" id="E2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('E3')" id="E3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('E4')" id="E4" href="#popup1">4</a></td>
+            </tr>
+            <tr>
+                <td class="filas">D</td>
+                <td class="asientos"><a class="button" onclick="butaca('D1')" id="D1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('D2')" id="D2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('D3')" id="D3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('D4')" id="D4" href="#popup1">4</a></td>
+                <td class="pasillo"></td>
+                <td class="pasillo"></td>
+                <td class="asientos"><a class="button" href="#popup1">5</a></td>
+                <td class="filas">D</td>
+            </tr>
+            <tr>
+                <td class="filas">C</td>
+                <td class="asientos"><a class="button" onclick="butaca('C1')" id="C1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('C2')" id="C2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('C3')" id="C3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('C4')" id="C4" href="#popup1">4</a></td>
+                <td class="pasillo"></td>
+                <td class="asientos"><a class="button" onclick="butaca('C5')" id="C5" href="#popup1">5</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('C6')" id="C6" href="#popup1">6</a></td>
+                <td class="filas">C</td>
+            </tr>
+            <tr>
+                <td class="filas">B</td>
+                <td class="asientos"><a class="button"  onclick="butaca('B1')" id="B1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button"  onclick="butaca('B2')" id="B2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button"  onclick="butaca('B3')" id="B3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button"  onclick="butaca('B4')" id="B4" href="#popup1">4</a></td>
+                <td class="pasillo"></td>
+                <td class="asientos"><a class="button"  onclick="butaca('B5')" id="B5" href="#popup1">5</a></td>
+                <td class="asientos"><a class="button"  onclick="butaca('B6')" id="B6" href="#popup1">6</a></td>
+                <td class="filas">B</td>
+            </tr>
+            <tr>
+                <td class="filas">A</td>
+                <td class="asientos"><a class="button" onclick="butaca('A1')" id="A1" href="#popup1">1</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('A2')" id="A2" href="#popup1">2</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('A3')" id="A3" href="#popup1">3</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('A4')" id="A4" href="#popup1">4</a></td>
+                <td class="pasillo"></td>
+                <td class="asientos"><a class="button" onclick="butaca('A5')" id="A5" href="#popup1">5</a></td>
+                <td class="asientos"><a class="button" onclick="butaca('A6')" id="A6" href="#popup1">6</a></td>
+                <td class="filas">A</td>
+            </tr>
+        </table>
+        <div id="pantalla"></div>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Información del cliente</h2>
+            <h3 id="butacaselect" value=""></h3>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <input type="text" id="iddelinputnombredelmodal" placeholder="Nombre">
+                <br>
+                <br>
+                <input type="number" id="iddelinputCrnetdelmodal" placeholder="Carné">
+                <br>
+                <br>
+                <input type="text"  id="iddelinputsecciondelmodal" placeholder="Sección">
+                <br><br>
+                <input type="button" id="enviar" onclick="cargadatosdelabutaca()" value="Guardar">
+            </div>
+        </div>
+    </div>
+    <script src="js/guardardatos.js"></script>
+    <script src="nueva_frontend.js"></script>
+    <script>
+        
+         function bloquearbutacasocupadas()
+        {
+            var peliculaseleccionada= JSON.parse(localStorage.getItem("peliculaseleccionada"));
+            if(peliculaseleccionada[0].ASIENTOS.A1.CARNET != null)
+                {
+                    document.getElementById("A1").style.backgroundColor = "gray";
+                    document.getElementById("A1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.A2.CARNET != null)
+                {
+                    document.getElementById("A2").style.backgroundColor = "gray";
+                    document.getElementById("A2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.A3.CARNET != null)
+                {
+                    document.getElementById("A3").style.backgroundColor = "gray";
+                    document.getElementById("A3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.A4.CARNET != null)
+                {
+                    document.getElementById("A4").style.backgroundColor = "gray";
+                    document.getElementById("A4").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.A5.CARNET != null)
+                {
+                    document.getElementById("A5").style.backgroundColor = "gray";
+                    document.getElementById("A5").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.A6.CARNET != null)
+                {
+                    document.getElementById("A6").style.backgroundColor = "gray";
+                    document.getElementById("A6").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.B1.CARNET != null)
+                {
+                    document.getElementById("B1").style.backgroundColor = "gray";
+                    document.getElementById("B1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.B2.CARNET != null)
+                {
+                    document.getElementById("B2").style.backgroundColor = "gray";
+                    document.getElementById("B2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.B3.CARNET != null)
+                {
+                    document.getElementById("B3").style.backgroundColor = "gray";
+                    document.getElementById("B3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.B4.CARNET != null)
+                {
+                    document.getElementById("B4").style.backgroundColor = "gray";
+                    document.getElementById("B4").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.B5.CARNET != null)
+                {
+                    document.getElementById("B5").style.backgroundColor = "gray";
+                    document.getElementById("B5").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.B6.CARNET != null)
+                {
+                    document.getElementById("B6").style.backgroundColor = "gray";
+                    document.getElementById("B6").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.C1.CARNET != null)
+                {
+                    document.getElementById("C1").style.backgroundColor = "gray";
+                    document.getElementById("C1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.C2.CARNET != null)
+                {
+                    document.getElementById("C2").style.backgroundColor = "gray";
+                    document.getElementById("C2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.C3.CARNET != null)
+                {
+                    document.getElementById("C3").style.backgroundColor = "gray";
+                    document.getElementById("C3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.C4.CARNET != null)
+                {
+                    document.getElementById("C4").style.backgroundColor = "gray";
+                    document.getElementById("C4").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.C5.CARNET != null)
+                {
+                    document.getElementById("C5").style.backgroundColor = "gray";
+                    document.getElementById("C5").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.C6.CARNET != null)
+                {
+                    document.getElementById("C6").style.backgroundColor = "gray";
+                    document.getElementById("C6").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.D1.CARNET != null)
+                {
+                    document.getElementById("D1").style.backgroundColor = "gray";
+                    document.getElementById("D1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.D2.CARNET != null)
+                {
+                    document.getElementById("D2").style.backgroundColor = "gray";
+                    document.getElementById("D2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.D3.CARNET != null)
+                {
+                    document.getElementById("D3").style.backgroundColor = "gray";
+                    document.getElementById("D3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.D4.CARNET != null)
+                {
+                    document.getElementById("D4").style.backgroundColor = "gray";
+                    document.getElementById("D4").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.E1.CARNET != null)
+                {
+                    document.getElementById("E1").style.backgroundColor = "gray";
+                    document.getElementById("E1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.E2.CARNET != null)
+                {
+                    document.getElementById("E2").style.backgroundColor = "gray";
+                    document.getElementById("E2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.E3.CARNET != null)
+                {
+                    document.getElementById("E3").style.backgroundColor = "gray";
+                    document.getElementById("E3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.E4.CARNET != null)
+                {
+                    document.getElementById("E4").style.backgroundColor = "gray";
+                    document.getElementById("E4").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.F1.CARNET != null)
+                {
+                    document.getElementById("F1").style.backgroundColor = "gray";
+                    document.getElementById("F1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.F2.CARNET != null)
+                {
+                    document.getElementById("F2").style.backgroundColor = "gray";
+                    document.getElementById("F2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.F3.CARNET != null)
+                {
+                    document.getElementById("F3").style.backgroundColor = "gray";
+                    document.getElementById("F3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.F4.CARNET != null)
+                {
+                    document.getElementById("F4").style.backgroundColor = "gray";
+                    document.getElementById("F4").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.G1.CARNET != null)
+                {
+                    document.getElementById("G1").style.backgroundColor = "gray";
+                    document.getElementById("G1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.G2.CARNET != null)
+                {
+                    document.getElementById("G2").style.backgroundColor = "gray";
+                    document.getElementById("G2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.G3.CARNET != null)
+                {
+                    document.getElementById("G3").style.backgroundColor = "gray";
+                    document.getElementById("G3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.G4.CARNET != null)
+                {
+                    document.getElementById("G4").style.backgroundColor = "gray";
+                    document.getElementById("G4").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.H1.CARNET != null)
+                {
+                    document.getElementById("H1").style.backgroundColor = "gray";
+                    document.getElementById("H1").disabled = true;
+                }
+        
+            if(peliculaseleccionada[0].ASIENTOS.H2.CARNET != null)
+                {
+                    document.getElementById("H2").style.backgroundColor = "gray";
+                    document.getElementById("H2").disabled = true;
+                }
+            
+            if(peliculaseleccionada[0].ASIENTOS.H3.CARNET != null)
+                {
+                    document.getElementById("H3").style.backgroundColor = "gray";
+                    document.getElementById("H3").disabled = true;
+                }
+            if(peliculaseleccionada[0].ASIENTOS.H4.CARNET != null)
+                {
+                    document.getElementById("H4").style.backgroundColor = "gray";
+                    document.getElementById("H4").disabled = true;
+                }
+            
+        }
+        
+        function cargardatosdelapelicula()
+            {
+                var pelicula = JSON.parse(localStorage.getItem('peliculaseleccionada'))
+
+                document.getElementById("titulodelapelicula").innerHTML += pelicula[0].NOMBRE + "<hr><p>Tanda: "+pelicula[0].FECHA+ " Inicia: "+pelicula[0].HORAINICIO +": "+pelicula[0].MINUTOINICIO+"<p/>";
+                
+                bloquearbutacasocupadas();
+            }
+        
+        function butaca(but)
+            {
+                document.getElementById("butacaselect").value=but;
+                document.getElementById("butacaselect").innerHTML=but;
+            }
+    </script>
+</body>
+</html>
